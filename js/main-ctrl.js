@@ -1,5 +1,5 @@
 app.controller('MainCtrl', function($scope, CalculatorFactory) {
-    $scope.calc = function () {
+    $scope.calculateDividends = function () {
         $scope.stdout = CalculatorFactory.calc($scope.stdin);
     };
 });

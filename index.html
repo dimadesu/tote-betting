@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Including Angular in head to prevent flash of variables -->
     <script src="js/lib/angular.js"></script>
-    <script src="js/lib/angular-mocks.js"></script>
 </head>
 <body>
 <div class="row" ng-controller="MainCtrl">
@@ -15,7 +14,7 @@
     </div>
     <div class="col">
         <p>
-            <button type="button" ng-click="calc()">Calculate Dividends</button>
+            <button type="button" ng-click="calculateDividends()">Calculate Dividends</button>
         </p>
         <div ng-repeat="item in stdout track by $index">{{item}}</div>
     </div>
