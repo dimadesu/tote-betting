@@ -1,0 +1,12 @@
+.container:after,
+.container:before {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.stdin,
+.stdout {
+  float: left;
+  width: 50%;
+}
